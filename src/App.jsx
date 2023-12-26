@@ -35,9 +35,7 @@ const App = () => {
     }
   };
 
-  const handleSubmit = (e) => {
-  
-
+  const handleSubmit = () => {
     if (!/^\d{10}$/.test(formData.phone)) {
       alert('Invalid phone number. Please enter a 10-digit phone number.');
       return;
@@ -53,17 +51,22 @@ const App = () => {
 
     console.log(formData);
     closeModal();
+    resetForm(); 
+  };
 
-    const { id, value } = e.target;
+  const resetForm = () => {
     setFormData({
-      ...formData,
-      [id]: value,
+      username: '',
+      email: '',
+      phone: '',
+      dob: '',
     });
   };
 
   const handleModalClick = (e) => {
-    if (e.currentTarget.classList.contains('modal')) {
+    if (e.target.classList.contains('modal')) {
       closeModal();
+      resetForm(); 
     }
   };
 
