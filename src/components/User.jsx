@@ -1,3 +1,5 @@
+import React from 'react' 
+
 const User = ({ closeModal }) => {
   const validateEmail = (email) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
