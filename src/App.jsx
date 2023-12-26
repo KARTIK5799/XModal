@@ -35,8 +35,8 @@ const App = () => {
     }
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = () => {
+  
 
     if (!/^\d{10}$/.test(formData.phone)) {
       alert('Invalid phone number. Please enter a 10-digit phone number.');
