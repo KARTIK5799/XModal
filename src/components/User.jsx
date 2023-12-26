@@ -1,4 +1,4 @@
-import React from 'react' 
+import React from "react";
 
 const User = ({ closeModal }) => {
   const validateEmail = (email) => {
@@ -10,7 +10,6 @@ const User = ({ closeModal }) => {
     return phone.length === 10 && !isNaN(phone);
   };
 
-  // Function to validate date of birth
   const validateDOB = (dob) => {
     const today = new Date();
     const birthDate = new Date(dob);
@@ -44,7 +43,7 @@ const User = ({ closeModal }) => {
   };
 
   const handleOutsideClick = (event) => {
-    if (event.target.className === "modal") {
+    if (event.target.classList.contains("modal")) {
       closeModal();
     }
   };
@@ -104,4 +103,5 @@ const User = ({ closeModal }) => {
     </div>
   );
 };
- export default User;
+
+export default User;
