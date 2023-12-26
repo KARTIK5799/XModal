@@ -17,6 +17,7 @@
     background-color: #4caf50;
     color: white;
     cursor: pointer;
+    
   }
   
   .modal {
@@ -60,8 +61,4 @@
     cursor: pointer;
   }
   
-  .error-message {
-    color: red;
-    margin-top: 10px;
-  }
   
