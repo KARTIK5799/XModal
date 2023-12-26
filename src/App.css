@@ -3,11 +3,6 @@
   margin-top: 50px;
 }
 
-.submit-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
 .modal {
   position: fixed;
   top: 0;
@@ -21,7 +16,7 @@
 }
 
 .modal-content {
-  background: #fff;
+  background: #f1f1f1;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -38,6 +33,10 @@
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  background-color: #3498db; 
+  color: white;
+  border: none;
+  border-radius: 5px;
 }
 
 
