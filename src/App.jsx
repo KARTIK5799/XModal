@@ -35,7 +35,7 @@ const App = () => {
     }
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
   
 
     if (!/^\d{10}$/.test(formData.phone)) {
@@ -53,10 +53,16 @@ const App = () => {
 
     console.log(formData);
     closeModal();
+
+    const { id, value } = e.target;
+    setFormData({
+      ...formData,
+      [id]: value,
+    });
   };
 
   const handleModalClick = (e) => {
-    if (e.target.classList.contains('modal')) {
+    if (e.currentTarget.classList.contains('modal')) {
       closeModal();
     }
   };
